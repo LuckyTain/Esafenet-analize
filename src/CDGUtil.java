@@ -10,6 +10,7 @@ public class CDGUtil {
             throws Exception
     {
         info = CodeDecoder.getTransferUnEncrptString(info);
+        System.out.println("info: " + info);
         byte abyte2[] = info.getBytes("ISO8859_1");
         int nLength = Array.getLength(abyte2);
         CodeDecoder.Decode(abyte2, nLength, key2);
